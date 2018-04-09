@@ -251,7 +251,7 @@ LaTeX_End -->
 
 ##  Schools
 
-It is critical to also consider the impact the SIMEX ranking has on aggregated SGPs since they are used for school and teacher accountability in Georgia.  The following tables looks at the analyses for Georgia over the past several years at the school level.
+It is critical to also consider the impact the SIMEX ranking has on aggregated SGPs since they are used for school and teacher accountability in several states.  The following tables looks at the example state's analyses over the past several years at the school level.
 
 
 ```{r, cache=TRUE, echo=FALSE, include=FALSE, Summaries}

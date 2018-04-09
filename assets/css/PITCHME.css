@@ -5,21 +5,6 @@
  * https://github.com/gitpitch/gitpitch/wiki/Slideshow-Custom-CSS
  */
 
-body {
-  background: #fff;
-  background-color: #fff;
-}
-
-html:-webkit-full-screen-ancestor {
-  background: #fff;
-  background-color: #fff;
-}
-
-html:-moz-full-screen-ancestor {
-  background: #fff;
-  background-color: #fff;
-}
-
 .reveal pre {
   width: 100%;
   box-shadow : none;
@@ -29,13 +14,13 @@ html:-moz-full-screen-ancestor {
   font-size: 1.2em;
   line-height: 1.2;
   max-height: 50vh !important;
-  opacity: 0.85;
+  opacity: 0.95;
   border-radius: 10px;
 }
 
 .reveal .slides section .code-presenting-annotation {
   color: white;
-  background: #1f1c18;
+  background: #3f6f99;
   padding: 1px 15px;
   border-radius: 15px;
   opacity: 0.75 !important;
@@ -43,7 +28,8 @@ html:-moz-full-screen-ancestor {
 }
 
 .reveal p span.slide-title {
-  color: #333;
+  color: white;
+  background: #8fc6d7;
   padding: 4px 15px;
   opacity: 0.75 !important;
   border-radius: 15px;

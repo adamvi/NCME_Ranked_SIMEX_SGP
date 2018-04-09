@@ -1,6 +1,4 @@
-##  Correcting for Measurement Error in Student Growth Percentiles:
-
-###  The SIMEX method.
+##  Using the SIMEX Method for Measurement Error Correction in Student Growth Percentiles
 
 ---
 

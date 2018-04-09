@@ -1,6 +1,6 @@
-###  Correcting for Measurement Error in Student Growth Percentiles:
+##  Correcting for Measurement Error in Student Growth Percentiles:
 
-####  The SIMEX method.
+###  The SIMEX method.
 
 ---
 
@@ -21,7 +21,7 @@
   + [SIMEX with Toy Data Set](https://gist.github.com/adamvi/5169922)
   + [SIMEX with Simulated Data Set](https://gist.github.com/adamvi/5169922)
   + [SIMEX Monte Carlo](https://gist.github.com/adamvi/5169922)
-- [General SGP Resources](https://github.com/CenterForAssessment/SGP_Resources/tree/master/articles)
+- [General SGP Resources](https://github.com/CenterForAssessment/SGP_Resources)
 
 ---
 

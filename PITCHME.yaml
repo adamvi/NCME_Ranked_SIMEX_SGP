@@ -10,9 +10,8 @@ theme-override : assets/css/PITCHME.css
 highlight : github-gist
 logo : assets/image/logo.png
 background : assets/image/binary-strings-white.jpg
-background-opacity : 5
+background-opacity : 10
 transition : none
 published : true
 footnote : "National Council on Measurement in Education (NCME) 2018 Meeting"
 mathjax : TeX-AMS_HTML-full
-charts : true

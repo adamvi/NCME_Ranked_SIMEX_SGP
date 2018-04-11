@@ -118,9 +118,9 @@ Unlike SGP/SIMEX calculation in SGP package Castellano and McCaffrey:
 ---
 ###  Ranked SIMEX SGPs - Results
 
-Uggghhh  PDF don't render on GitPitch...
+Marginal distributions - looking for uniformity
 
-![Image-Absolute](./img/Math_G8_Marginal_Distributions-1_Prior.pdf)
+![Image-Absolute](./img/Math_G8_Marginal_Distributions-1_Prior.png)
 
 ---
 ###  Ranked SIMEX SGPs - Results

@@ -135,7 +135,7 @@ Figure `r getOption("fig_caption_no")+1` shows the distribution of the three typ
 
   G8sgps <- Agg_Data_Long[YEAR=="2017" & GRADE=="8" & CONTENT_AREA=="MATHEMATICS" & !is.na(SGP_ORDER_1)]
 
-  pdf(file="Math_G8_Marginal_Distributions-1_Prior.pdf", width=12, height=4)
+  Cairo::Cairo(file="Math_G8_Marginal_Distributions-1_Prior.png", width=12, height=4, units="in", dpi=144)
   par(mfrow=c(1,3))
   tmp.label <- "Percentile"
   hist(G8sgps$SGP_ORDER_1, freq=FALSE, main="Standard SGP", ylim=c(0, 0.013), xlab=tmp.label, cex.axis=1.25, cex.lab=1.75, cex.main=2)
@@ -148,7 +148,7 @@ Figure `r getOption("fig_caption_no")+1` shows the distribution of the three typ
 
   G8sgps <- Agg_Data_Long[YEAR=="2017" & GRADE=="8" & CONTENT_AREA=="MATHEMATICS" & !is.na(SGP_ORDER_2)]
 
-  pdf(file="Math_G8_Marginal_Distributions-2_Prior.pdf", width=8, height=2.67)
+  Cairo::Cairo(file="Math_G8_Marginal_Distributions-2_Prior.png", width=12, height=4, units="in", dpi=144)
   par(mfrow=c(1,3))
   tmp.label <- "Percentile"
   hist(G8sgps$SGP_ORDER_2, freq=FALSE, main="Standard SGP", ylim=c(0, 0.013), xlab=tmp.label, cex.axis=1.25, cex.lab=1.75, cex.main=2)
@@ -164,7 +164,7 @@ Figure `r getOption("fig_caption_no")+1` shows the distribution of the three typ
 
 ```{r, results="asis", echo=FALSE, G8_Math_MargDists}
 		placeFigure(page.break= FALSE,
-			files = "./img/Math_G8_Marginal_Distributions-1_Prior.pdf",
+			files = "./img/Math_G8_Marginal_Distributions-1_Prior.png",
 			caption = "Comparison of the Uniformity of Distributions for 8<sup>th</sup> Grade Mathematics Estimates.")
 ```
 
@@ -183,9 +183,9 @@ These plots display typical distributions of each SGP variant from the same 2017
   dat <- Agg_Data_Long[SGP_NORM_GROUP %in% c("2015/MATHEMATICS_6; 2016/MATHEMATICS_7; 2017/MATHEMATICS_8", "2016/MATHEMATICS_7; 2017/MATHEMATICS_8"),
   				 c("VALID_CASE", "CONTENT_AREA", "GRADE", "YEAR", "ID", "SGP_ORDER_1", "SGP_SIMEX_ORDER_1", "SGP_SIMEX_RANKED_ORDER_1", "SCALE_SCORE", "SCALE_SCORE_PRIOR", "SGP_NORM_GROUP"), with=FALSE]
 
-	gofSGP(dat, years='2017', content_areas="MATHEMATICS", use.sgp="SGP_ORDER_1", output.format="PNG")
-	gofSGP(dat, years='2017', content_areas="MATHEMATICS", use.sgp="SGP_SIMEX_ORDER_1", output.format="PNG") # Run before SIMEX and Rename folder???
-	gofSGP(dat, years='2017', content_areas="MATHEMATICS", use.sgp="SGP_SIMEX_RANKED_ORDER_1", output.format="PNG") # Run before SIMEX and Rename folder???
+  gofSGP(dat, years='2017', content_areas="MATHEMATICS", use.sgp="SGP_ORDER_1", output.format=c("PNG", "SVG"))
+	gofSGP(dat, years='2017', content_areas="MATHEMATICS", use.sgp="SGP_SIMEX_ORDER_1", output.format=c("PNG", "SVG"))
+	gofSGP(dat, years='2017', content_areas="MATHEMATICS", use.sgp="SGP_SIMEX_RANKED_ORDER_1", output.format=c("PNG", "SVG"))
 
 	setwd("../")
 ```

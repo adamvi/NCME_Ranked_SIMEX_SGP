@@ -132,7 +132,7 @@ Goodness of Fit Plots - conditional distributions
 @title[Uncorrected]
 
 ![Uncorrected](svg)
-<img src="./img/Goodness_of_Fit/MATHEMATICS.2017/gofSGP_Grade_8.png" alt="Uncorrected" width="700" height="800">
+<img src="./img/Goodness_of_Fit/MATHEMATICS.2017/gofSGP_Grade_8.png" alt="Uncorrected" width="500" height="500">
 
 +++
 @title[SIMEX Corrected]

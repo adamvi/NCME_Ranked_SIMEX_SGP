@@ -168,7 +168,7 @@ Goodness of Fit Plots - conditional distributions
 
 ####  School Level Aggregations by Year
 
-<img src="./img/Table_2.png" alt="School Year" width="900" height="300">
+<img src="./img/Table_2.png" alt="School Year" width="900" height="350">
 
 +++
 @title[SchoolGrade]

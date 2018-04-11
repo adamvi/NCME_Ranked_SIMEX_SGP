@@ -55,7 +55,7 @@
 ###  SIMEX - the name says it all...
 
 -  EXTRAPOLATE |
-  + Average the parameter estimates at each level of ${\lambda}. |
+  + Average the parameter estimates at each level of ${\lambda}$. |
   + Averaged "pseudo" parameter estimates and the "naive" estimates are regressed on ${\lambda}$ |
   + Using this model, EXTRAPOLATE the predicted value at ${\lambda} = -1$ |
     - Voila! The SIMEX estimate of the error-free parameter. |
@@ -92,31 +92,33 @@
 - Castellano and McCaffrey (2017) proposed ranking SIMEX SGP estimates to address: |
   - excess variance from the SIMEX estimation process |
   - uniform distribution of SGPs |
-- Best of both worlds for aggregated and individual SGPs
-- Ranked SIMEX values added to SGP computation in 2017 (version 1.7-0.2)
+- Best of both worlds for aggregated and individual SGPs |
+- Ranked SIMEX values added to SGP computation in 2017 (version 1.7-0.2) |
 
 ---
 ###  Ranked SIMEX SGPs
 
-- Unlike SGP/SIMEX calculation in SGP package Castellano and McCaffrey:
+Unlike SGP/SIMEX calculation in SGP package Castellano and McCaffrey:
 - Used closed-form equations to estimate SIMEX SGPs |
   + No simulation/extrapolation, quantile regression, etc. |
   + Make assumptions about data and ME structures that we don't |
-- Provided them with continuous SIMEX SGP values |
-  + Re-ranking integer values from the SGP calculations did not lead to hoped for changes |
+- Produces continuous SIMEX SGP values |
+  + Re-ranking integer values from the SGP calculations ... not impressive |
 
 ---
 ###  Ranked SIMEX SGPs
 
-Adaptations to the SGP/SIMEX framework:
+*Adaptations to the SGP/SIMEX framework:*          
 - Need continuous values of SIMEX SGPs |
   - Add 10X more percentile values |
-    + **At least** 10X longer - not tenable |
+    + *At least* 10X longer - not tenable |
   - Calculate arithmetic midpoints (8) between the SIMEX estimates of the predicted scores |
     + Much faster and similar results
 
 ---
 ###  Ranked SIMEX SGPs - Results
+
+Uggghhh  PDF don't render on GitPitch...
 
 ![Image-Absolute](./img/Math_G8_Marginal_Distributions-1_Prior.pdf)
 
@@ -125,6 +127,7 @@ Adaptations to the SGP/SIMEX framework:
 
 Goodness of Fit Plots - conditional distributions
 
+(Scroll Down)
 +++
 @title[Uncorrected]
 

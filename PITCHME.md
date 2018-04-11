@@ -128,21 +128,28 @@ Uggghhh  PDF don't render on GitPitch...
 Goodness of Fit Plots - conditional distributions
 
 (Scroll Down)
+
 +++
+
 @title[Uncorrected]
 
-![Uncorrected](svg)
-<img src="./img/Goodness_of_Fit/MATHEMATICS.2017/gofSGP_Grade_8.png" alt="Uncorrected" width="500" height="500">
+####  Uncorrected
+
+<img src="./img/Goodness_of_Fit/MATHEMATICS.2017/gofSGP_Grade_8.png" alt="Uncorrected" width="600" height="600">
 
 +++
 @title[SIMEX Corrected]
 
-![Image-Absolute](./img/Goodness_of_Fit/MATHEMATICS.2017.SIMEX/gofSGP_Grade_8.png)
+####  SIMEX
+
+<img src="./img/Goodness_of_Fit/MATHEMATICS.2017.SIMEX/gofSGP_Grade_8.png" alt="SIMEX" width="600" height="600">
 
 +++
 @title[Ranked SIMEX]
 
-![Image-Absolute](./img/Goodness_of_Fit/MATHEMATICS.2017.RANKED_SIMEX/gofSGP_Grade_8.png)
+####  Ranked SIMEX
+
+<img src="./img/Goodness_of_Fit/MATHEMATICS.2017.RANKED_SIMEX/gofSGP_Grade_8.png" alt="SIMEX" width="600" height="600">
 
 ---
 ## Questions?

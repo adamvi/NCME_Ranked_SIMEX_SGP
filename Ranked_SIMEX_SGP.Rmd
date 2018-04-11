@@ -217,14 +217,14 @@ An important consequence of the typical SIMEX and RS-SGP conditional distributio
 
 ```{r, results='asis', echo=FALSE, Student_Correlations}
 	student.cor.grd <- Agg_Data_Long[YEAR=='2017' & VALID_CASE=='VALID_CASE'][, list(
-		`$\\\rr_ {  Test Scores}$` = round(cor(SCALE_SCORE, SCALE_SCORE_PRIOR_STANDARDIZED, use='pairwise.complete'), 3),
-		`$\\\rr_ {  SGP}$` = format(round(cor(SGP, SCALE_SCORE_PRIOR_STANDARDIZED, use='pairwise.complete'), 3), nsmall = 3),
-		`$\\\rr_ {  SIMEX SGP}$` = round(cor(SGP_SIMEX, SCALE_SCORE_PRIOR_STANDARDIZED, use='pairwise.complete'), 3),
-		`$\\\rr_ {  Ranked SIMEX}$` = round(cor(SGP_SIMEX_RANKED, SCALE_SCORE_PRIOR_STANDARDIZED, use='pairwise.complete'), 3)),
-		# N_Size = sum(!is.na(SGP))), #  Leave off to help anonymize the State
+		`Test Scores` = round(cor(SCALE_SCORE, SCALE_SCORE_PRIOR_STANDARDIZED, use='pairwise.complete'), 3),
+		SGP = format(round(cor(SGP_ORDER_1, SCALE_SCORE_PRIOR_STANDARDIZED, use='pairwise.complete'), 3), nsmall = 3),
+		`SIMEX SGP` = round(cor(SGP_SIMEX_ORDER_1, SCALE_SCORE_PRIOR_STANDARDIZED, use='pairwise.complete'), 3),
+		`Ranked SIMEX` = round(cor(SGP_SIMEX_RANKED_ORDER_1, SCALE_SCORE_PRIOR_STANDARDIZED, use='pairwise.complete'), 3)),
+		# N_Size = sum(!is.na(SGP_ORDER_1))), #  Leave off to help anonymize the State
 		keyby = list(CONTENT_AREA, GRADE)]
 
-	gl_tmp_tbl <- student.cor.grd[!is.na(student.cor.grd[["$\\\rr_ {  Test Scores}$"]])]
+	gl_tmp_tbl <- student.cor.grd[!is.na(student.cor.grd[["Test Scores"]])]
 	invisible(gl_tmp_tbl[, GRADE := as.numeric(GRADE)])
 	setkey(gl_tmp_tbl, CONTENT_AREA, GRADE)
 	# gl_tmp_tbl <- gl_tmp_tbl[][order(match(gl_tmp_tbl$CONTENT_AREA, GL_subjects))]
@@ -255,31 +255,31 @@ It is critical to also consider the impact the SIMEX ranking has on aggregated S
 
 ```{r, cache=TRUE, echo=FALSE, include=FALSE, Summaries}
 smry <- Agg_Data_Long[!is.na(SGP_SIMEX),
-	list(Mean_SGP=mean(SGP, na.rm=T),# Median_SGP=median(as.numeric(SGP), na.rm=T),
-       Mean_SIMEX=mean(SGP_SIMEX, na.rm=T),# Median_SIMEX=median(as.numeric(SGP_SIMEX), na.rm=T),
-       Mean_Ranked_SIMEX=mean(SGP_SIMEX, na.rm=T),# Median_Ranked_SIMEX=median(as.numeric(SGP_SIMEX), na.rm=T),
+	list(Mean_SGP=mean(SGP_ORDER_1, na.rm=T),# Median_SGP=median(as.numeric(SGP), na.rm=T),
+       Mean_SIMEX=mean(SGP_SIMEX_ORDER_1, na.rm=T),# Median_SIMEX=median(as.numeric(SGP_SIMEX), na.rm=T),
+       Mean_Ranked_SIMEX=mean(SGP_SIMEX_ORDER_1, na.rm=T),# Median_Ranked_SIMEX=median(as.numeric(SGP_SIMEX), na.rm=T),
 		   Prior_SS=mean(SCALE_SCORE_PRIOR_STANDARDIZED, na.rm=T), N=.N),
     keyby=c("SCHOOL_NUMBER", "CONTENT_AREA", "YEAR")]
 
 smry.grd <- Agg_Data_Long[!is.na(SGP_SIMEX),
-list(Mean_SGP=mean(SGP, na.rm=T),
-     Mean_SIMEX=mean(SGP_SIMEX, na.rm=T),
-     Mean_Ranked_SIMEX=mean(SGP_SIMEX, na.rm=T),
+list(Mean_SGP=mean(SGP_ORDER_1, na.rm=T),
+     Mean_SIMEX=mean(SGP_SIMEX_ORDER_1, na.rm=T),
+     Mean_Ranked_SIMEX=mean(SGP_SIMEX_ORDER_1, na.rm=T),
      Prior_SS=mean(SCALE_SCORE_PRIOR_STANDARDIZED, na.rm=T), N=.N),
 	keyby=c("SCHOOL_NUMBER", "CONTENT_AREA", "GRADE", "YEAR")]
 
 
 cor.no.grd <- smry[!is.na(Mean_SGP) & N > 14][,
-	list(R_Mean_SGP = round(cor(Mean_SGP, Prior_SS, use="complete"), 3),
-       R_Mean_SIMEX = round(cor(Mean_SIMEX, Prior_SS, use="complete"), 3),
-       R_Mean_Ranked_SIMEX = round(cor(Mean_Ranked_SIMEX, Prior_SS, use="complete"), 3),
+	list(Mean_SGP = round(cor(Mean_SGP, Prior_SS, use="complete"), 3),
+       Mean_SIMEX = round(cor(Mean_SIMEX, Prior_SS, use="complete"), 3),
+       Mean_Ranked_SIMEX = round(cor(Mean_Ranked_SIMEX, Prior_SS, use="complete"), 3),
 			 N=.N),
 	keyby=c("CONTENT_AREA", "YEAR")]
 
 cor.grd <- smry.grd[!is.na(Mean_SGP) & N > 14][,
-	list(R_Mean_SGP = round(cor(Mean_SGP, Prior_SS, use="complete"), 3),
-		 R_Mean_SIMEX = round(cor(Mean_SIMEX, Prior_SS, use="complete"), 3),
-     R_Mean_Ranked_SIMEX = round(cor(Mean_Ranked_SIMEX, Prior_SS, use="complete"), 3),
+	list(Mean_SGP = round(cor(Mean_SGP, Prior_SS, use="complete"), 3),
+		 Mean_SIMEX = round(cor(Mean_SIMEX, Prior_SS, use="complete"), 3),
+     Mean_Ranked_SIMEX = round(cor(Mean_Ranked_SIMEX, Prior_SS, use="complete"), 3),
 		 N=.N),
 	keyby=c("CONTENT_AREA", "GRADE", "YEAR")]
 

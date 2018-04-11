@@ -131,7 +131,7 @@ Goodness of Fit Plots - conditional distributions
 +++
 @title[Uncorrected]
 
-![Image-Absolute](./img/Goodness_of_Fit/MATHEMATICS.2017/gofSGP_Grade_8.png)
+![Uncorrected](./img/Goodness_of_Fit/MATHEMATICS.2017/gofSGP_Grade_8.svg)
 
 +++
 @title[SIMEX Corrected]

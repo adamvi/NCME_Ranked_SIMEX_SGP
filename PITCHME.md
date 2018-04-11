@@ -118,7 +118,7 @@ Unlike SGP/SIMEX calculation in SGP package Castellano and McCaffrey:
 ---
 ###  Ranked SIMEX SGPs - Results
 
-Marginal distributions - looking for uniformity
+Marginal distributions - 8<sup>th</sup> Grade Math SGPs (single prior score)
 
 ![Image-Absolute](./img/Math_G8_Marginal_Distributions-1_Prior.png)
 
@@ -150,6 +150,236 @@ Goodness of Fit Plots - conditional distributions
 ####  Ranked SIMEX
 
 <img src="./img/Goodness_of_Fit/MATHEMATICS.2017.RANKED_SIMEX/gofSGP_Grade_8.png" alt="Ranked SIMEX" width="500" height="500">
+
+---
+###  Correlation Tables
+
+<!-- HTML_Start -->
+<table class="gmisc_table breakboth" style="border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;">
+<thead>
+<tr>
+<td colspan="6" style="text-align: left;">
+<strong>Table 1:</strong> Student Level Correlations between Prior Standardized Scale Score and 1) Current Scale Score, 2) SGP, 3) SIMEX SGP and 4) Ranked SIMEX SGP.
+</td>
+</tr>
+<tr>
+<th style="border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
+Content Area
+</th>
+<th style="border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
+Grade
+</th>
+<th style="border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
+<span class="math">$\
+r_ { Test Scores}$</span>
+</th>
+<th style="border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
+<span class="math">$\
+r_ { SGP}$</span>
+</th>
+<th style="border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
+<span SIMEX SGP </span>
+</th>
+<th style="border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
+Ranked SIMEX
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">
+Language Arts
+</td>
+<td style="text-align: right;">
+4
+</td>
+<td style="text-align: right;">
+0.830
+</td>
+<td style="text-align: right;">
+0.000
+</td>
+<td style="text-align: right;">
+-0.121
+</td>
+<td style="text-align: right;">
+-0.122
+</td>
+</tr>
+<tr>
+<td style="text-align: right;">
+</td>
+<td style="text-align: right;">
+5
+</td>
+<td style="text-align: right;">
+0.843
+</td>
+<td style="text-align: right;">
+0.000
+</td>
+<td style="text-align: right;">
+-0.090
+</td>
+<td style="text-align: right;">
+-0.090
+</td>
+</tr>
+<tr>
+<td style="text-align: right;">
+</td>
+<td style="text-align: right;">
+6
+</td>
+<td style="text-align: right;">
+0.839
+</td>
+<td style="text-align: right;">
+0.000
+</td>
+<td style="text-align: right;">
+-0.086
+</td>
+<td style="text-align: right;">
+-0.086
+</td>
+</tr>
+<tr>
+<td style="text-align: right;">
+</td>
+<td style="text-align: right;">
+7
+</td>
+<td style="text-align: right;">
+0.839
+</td>
+<td style="text-align: right;">
+-0.001
+</td>
+<td style="text-align: right;">
+-0.086
+</td>
+<td style="text-align: right;">
+-0.086
+</td>
+</tr>
+<tr>
+<td style="text-align: right;">
+</td>
+<td style="text-align: right;">
+8
+</td>
+<td style="text-align: right;">
+0.846
+</td>
+<td style="text-align: right;">
+0.001
+</td>
+<td style="text-align: right;">
+-0.087
+</td>
+<td style="text-align: right;">
+-0.088
+</td>
+</tr>
+<tr>
+<td style="text-align: right;">
+Mathematics
+</td>
+<td style="text-align: right;">
+4
+</td>
+<td style="text-align: right;">
+0.843
+</td>
+<td style="text-align: right;">
+-0.001
+</td>
+<td style="text-align: right;">
+-0.096
+</td>
+<td style="text-align: right;">
+-0.096
+</td>
+</tr>
+<tr>
+<td style="text-align: right;">
+</td>
+<td style="text-align: right;">
+5
+</td>
+<td style="text-align: right;">
+0.856
+</td>
+<td style="text-align: right;">
+-0.001
+</td>
+<td style="text-align: right;">
+-0.071
+</td>
+<td style="text-align: right;">
+-0.071
+</td>
+</tr>
+<tr>
+<td style="text-align: right;">
+</td>
+<td style="text-align: right;">
+6
+</td>
+<td style="text-align: right;">
+0.842
+</td>
+<td style="text-align: right;">
+-0.001
+</td>
+<td style="text-align: right;">
+-0.068
+</td>
+<td style="text-align: right;">
+-0.069
+</td>
+</tr>
+<tr>
+<td style="text-align: right;">
+</td>
+<td style="text-align: right;">
+7
+</td>
+<td style="text-align: right;">
+0.866
+</td>
+<td style="text-align: right;">
+0.000
+</td>
+<td style="text-align: right;">
+-0.073
+</td>
+<td style="text-align: right;">
+-0.073
+</td>
+</tr>
+<tr>
+<td style="border-bottom: 2px solid grey; text-align: right;">
+</td>
+<td style="border-bottom: 2px solid grey; text-align: right;">
+8
+</td>
+<td style="border-bottom: 2px solid grey; text-align: right;">
+0.819
+</td>
+<td style="border-bottom: 2px solid grey; text-align: right;">
+0.003
+</td>
+<td style="border-bottom: 2px solid grey; text-align: right;">
+-0.064
+</td>
+<td style="border-bottom: 2px solid grey; text-align: right;">
+-0.064
+</td>
+</tr>
+</tbody>
+</table>
 
 ---
 ## Questions?

@@ -161,7 +161,7 @@ Goodness of Fit Plots - conditional distributions
 
 ####  Student Level
 
-<img src="./img/Table_1.png" alt="Ranked SIMEX" width="700" height="500">
+<img src="./img/Table_1.png" alt="Ranked SIMEX" width="900" height="500">
 
 
 ---

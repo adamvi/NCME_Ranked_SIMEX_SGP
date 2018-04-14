@@ -15,15 +15,13 @@
 
 ###  Additional Resources
 - *Full SIMEX Report*
-  + [HTML](https://adamvi.github.io/NCME_Ranked_SIMEX_SGP/)
-  + [PDF1](https://github.com/adamvi/NCME_Ranked_SIMEX_SGP/PDF/Ranked_SIMEX_SGP.pdf)
-  + <a href="/PDF/Ranked_SIMEX_SGP.pdf" download="Ranked_SIMEX_SGP.pdf"> PDF2 </a>
-  + <a href="https://github.com/adamvi/NCME_Ranked_SIMEX_SGP/PDF/Ranked_SIMEX_SGP.pdf" download="Ranked_SIMEX_SGP.pdf"> PDF3 </a>
+  + [Online](https://adamvi.github.io/NCME_Ranked_SIMEX_SGP/)
+  + <a href="/PDF/Ranked_SIMEX_SGP.pdf" download="Ranked_SIMEX_SGP-NCME_2018.pdf"> PDF Download </a>
 - *Code Examples*
   + [SIMEX with Toy Data Set](https://gist.github.com/adamvi/5169922)
   + [SIMEX with Simulated Data Set](https://gist.github.com/adamvi/5169922)
   + [SIMEX Monte Carlo](https://gist.github.com/adamvi/5169922)
-- [General SGP Resources](https://github.com/CenterForAssessment/SGP_Resources)
+- [*General SGP Resources*](https://github.com/CenterForAssessment/SGP_Resources)
 
 ---
 

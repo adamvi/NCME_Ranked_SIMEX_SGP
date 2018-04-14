@@ -14,7 +14,7 @@
 ---
 
 ###  Additional Resources
-- *Full SIMEX Report* [HTML](https://adamvi.github.io/NCME_Ranked_SIMEX_SGP/), [PDF](<a href="PDF/Ranked_SIMEX_SGP.pdf" download>PDF</a>)
+- *Full SIMEX Report* - [HTML](https://adamvi.github.io/NCME_Ranked_SIMEX_SGP/) / <a href="/PDF/Ranked_SIMEX_SGP.pdf" download="PDF"> [PDF](./PDF/Ranked_SIMEX_SGP.pdf)
 - *Code Examples*
   + [SIMEX with Toy Data Set](https://gist.github.com/adamvi/5169922)
   + [SIMEX with Simulated Data Set](https://gist.github.com/adamvi/5169922)

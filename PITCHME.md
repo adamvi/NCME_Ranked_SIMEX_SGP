@@ -18,8 +18,8 @@
   + [Online](https://adamvi.github.io/NCME_Ranked_SIMEX_SGP/)
   + [PDF Download](https://github.com/adamvi/NCME_Ranked_SIMEX_SGP/raw/master/PDF/Ranked_SIMEX_SGP.pdf)
 - *Code Examples*
-  + [SIMEX with Toy Data Set](https://gist.github.com/adamvi/5169922)
-  + [SIMEX with Simulated Data Set](https://gist.github.com/adamvi/5169922)
+  + [SIMEX with Toy Data Set](https://gist.github.com/adamvi/26b931b26ece4fdd482dba7bde69a945)
+  + [SIMEX with Simulated Data Set](https://gist.github.com/adamvi/0515b1694e7b108139228331a80e7f9e)
   + [SIMEX Monte Carlo](https://gist.github.com/adamvi/5169922)
 - [*General SGP Resources*](https://github.com/CenterForAssessment/SGP_Resources)
 

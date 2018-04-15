@@ -1,10 +1,10 @@
 ###  Ranked SIMEX Measurement Error Correction
 ####  &
 ###  Student Growth Percentiles
-
-####   Adam R. VanIwaarden
-####   Damian W. Betebenner
-####   Center for Assessment (NCIEA)
+####
+####   *Adam R. VanIwaarden*
+####   *Damian W. Betebenner*
+####   *Center for Assessment (NCIEA)*
 #####  NCME Annual Meeting -- April 15, 2018
 
 ---

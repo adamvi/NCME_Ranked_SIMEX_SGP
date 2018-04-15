@@ -57,7 +57,7 @@ NOT covered here (but available in the report):
 
 ###  SIMEX - the name says it all...
 
-- ***SIM*** ulation / **EX** trapolation |
+- *SIM* ulation / *EX* trapolation |
 - Estimate the impact of ME through a series of SIMULATION experiments |
   + Increasing amounts of simulated ME are added to observed values to create error-prone "pseudo" data sets
 - Parameter estimates of interest are calculated using perturbed data|

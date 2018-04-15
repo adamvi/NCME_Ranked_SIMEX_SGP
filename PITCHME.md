@@ -1,7 +1,7 @@
 ###  Ranked SIMEX Measurement Error Correction
 ####  &
 ###  Student Growth Percentiles
-####   **
+####   ________________________________________
 ####   *Adam R. VanIwaarden*
 ####   *Damian W. Betebenner*
 ####   *Center for Assessment (NCIEA)*

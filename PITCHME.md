@@ -179,6 +179,14 @@ Goodness of Fit Plots - conditional distributions
 
 <img src="./img/Goodness_of_Fit/MATHEMATICS.2017.RANKED_SIMEX/gofSGP_Grade_8.png" alt="Ranked SIMEX" width="500" height="500">
 
++++
+
+@title[OLS]
+
+####  Ordinary Least Squares SGPs
+
+<img src="./img/Goodness_of_Fit/MATHEMATICS.2017/gofSGP_Grade_8-OLS.png" alt="Uncorrected" width="500" height="500">
+
 ---
 ###  Correlation Tables
 

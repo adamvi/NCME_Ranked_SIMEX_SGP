@@ -1,6 +1,6 @@
-###  Ranked SIMEX Measurement Error Correction
-####  &
-###  Student Growth Percentiles
+###    Ranked SIMEX Measurement Error Correction
+####               &
+###    Student Growth Percentiles
 ####   ______________________
 ####   *Adam R. VanIwaarden*
 ####   *Damian W. Betebenner*
@@ -59,7 +59,7 @@ NOT covered here (but available in the report):
 
 - SIM-ulation & EX-trapolation |
 - Estimate the impact of ME through a series of SIMULATION experiments |
-  + Increasing amounts of simulated ME are added to observed values to create error-prone "pseudo" data sets
+  + Increasing amounts of simulated ME are added to observed values to create error-prone "pseudo" data sets|
 - Parameter estimates of interest are calculated using perturbed data|
 - Simulations are repeated a large number of times at each level of increased error. |
 
@@ -82,7 +82,7 @@ NOT covered here (but available in the report):
 ###  SIMEX Method and SGPs
 
 - Straightforward when interested in a simple parameter (e.g. regression model coefficient) |
-- Not what we want to correct for in the SGP model |
+- Not what needs correcting for in SGP models |
 - SGPs are derived from the fitted values of the model |
   + predicted test scores at 100 percentiles |
 - Create a SIMEX corrected lookup-table of predicted scores to derive SGPs. |
@@ -109,7 +109,7 @@ NOT covered here (but available in the report):
 ###  Ranked SIMEX SGPs
 
 Unlike SGP/SIMEX calculation in SGP package Castellano and McCaffrey:
-- Used closed-form equations to estimate SIMEX SGPs |
+- Used closed-form equations to estimate "SIMEX SGPs" |
   + No simulation/extrapolation, quantile regression, etc. |
   + Make assumptions about data distributions and ME structures that don't always hold |
 - Produces continuous SIMEX SGP values |
@@ -136,9 +136,9 @@ Adaptations to the SGP/SIMEX framework:
   + Conditional uniformity means this is true REGARDLESS of prior achievement |
 
 ---
-###  Ranked SIMEX SGPs - Real World Results
+####  Ranked SIMEX SGPs - Real World Results
 
-Marginal distributions - 8<sup>th</sup> Grade Math SGPs (single prior score)
+Marginal distributions - 8<sup>th</sup> Grade Math SGPs
 
 - SIMEX distribution is U-shaped
 - Ranking produces a more uniform distribution
@@ -190,6 +190,11 @@ Goodness of Fit Plots - conditional distributions
 ---
 ###  Correlation Tables
 
+- Standard SGPs are uncorrelated with prior test scores |
+- A negative correlation is created between Ranked/SIMEX SGPs |
+  + Translates to school and teacher aggregations |
+  + Indicates reduction of bias |
+
 (Scroll Down)
 
 +++
@@ -213,6 +218,15 @@ Goodness of Fit Plots - conditional distributions
 
 <img src="./img/Table_3.png" alt="School Grade" width="900" height="500">
 
+---
+###  Take away from example state
+
+- SIMEX corrections seem to be working as expected |
+- Ranking the SIMEX SGPs helps in important/visible areas |
+- Support states using SIMEX SGPs to also adopt SIMEX Ranking |
+
 
 ---
 ## Questions?
+
+https://gitpitch.com/adamvi/NCME_Ranked_SIMEX_SGP

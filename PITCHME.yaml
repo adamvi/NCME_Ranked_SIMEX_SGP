@@ -10,5 +10,5 @@ logo : assets/image/logo.png
 highlight : hybrid
 transition : none
 published : true
-footnote : "National Council on Measurement in Education (NCME) 2018 Meeting"
+footnote : "National Council on Measurement in Education (NCME) 2018 Meeting -- gitpitch.com/adamvi/NCME_Ranked_SIMEX_SGP"
 mathjax : TeX-AMS_HTML-full

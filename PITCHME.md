@@ -15,7 +15,7 @@ What will be covered:
 - Basics of the SIMEX Method |
 - SIMEX use in Student Growth Percentiles (SGP) |
 - Provide evidence of effectiveness from an example state's analyses |
-  + Distributions of SGPs |
+  + SGP distributions |
   + Correlation of SGPs with prior achievement |
 
 ---
@@ -91,11 +91,11 @@ NOT covered here (but available in the report):
 ---
 ###  SIMEX Method and SGPs
 
-- Unfortunately ... |
-  - SIMEX corrected SGPs also have technical limitations. |
-- Student level SIMEX SGPs have larger errors than the uncorrected ones |
-  + SIMEX SGPs preferred for aggregated results (mean or median SGPs) |
-  + Uncorrected preferred for student level reporting |
+Unfortunately ... |
+- SIMEX corrected SGPs also have technical limitations. |
+  - Student level SIMEX SGPs have larger errors than the uncorrected ones |
+    + SIMEX SGPs preferred for aggregated results (mean or median SGPs) |
+    + Uncorrected preferred for student level reporting |
 
 ---
 ###  Ranked SIMEX SGPs
@@ -123,7 +123,7 @@ Adaptations to the SGP/SIMEX framework:
 - Need continuous values of SIMEX SGPs |
   - Add 10X more percentile value calculations |
     + *At least* 10X longer - not tenable |
-  - Calculate midpoints (8) between the SIMEX estimates of the predicted scores |
+  - Calculate midpoints (8) between the SIMEX predicted score estimates |
     + Much faster and similar results
 
 ---
@@ -232,7 +232,7 @@ Goodness of Fit Plots - conditional distributions
 
 - *Presentation* - https://gitpitch.com/adamvi/NCME_Ranked_SIMEX_SGP
 - *Full SIMEX Report*
-  + [Online](https://adamvi.github.io/NCME_Ranked_SIMEX_SGP/)
+  + [Online](https://adamvi.github.io/NCME_Ranked_SIMEX_SGP/) "https://adamvi.github.io/NCME_Ranked_SIMEX_SGP/"
   + [PDF Download](https://github.com/adamvi/NCME_Ranked_SIMEX_SGP/raw/master/PDF/Ranked_SIMEX_SGP.pdf)
 - *Code Examples*
   + [SIMEX with Toy Data Set](https://gist.github.com/adamvi/26b931b26ece4fdd482dba7bde69a945)

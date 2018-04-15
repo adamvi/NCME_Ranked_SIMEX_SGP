@@ -41,7 +41,7 @@ NOT covered here (but available in the report):
 ###  Measurement error (ME)
 
 -  Inherent component of all standardized tests |
--  Double whammy of ME: impacts both accuracy and precision of estimates
+-  Double whammy of ME: impacts both accuracy and precision of estimates |
 -  Additional uncertainty in growth estimates |
 -  Produces biased estimates (i.e. inaccurate ones) |
   + disadvantages students with lower prior achievement and vice versa |

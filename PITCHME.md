@@ -13,10 +13,10 @@
 What will be covered:
 - Review the measurement error problem |
 - Basics of the SIMEX Method |
-- Basics of SIMEX in Student Growth Percentiles (SGP) |
+- SIMEX use in Student Growth Percentiles (SGP) |
 - Provide evidence of effectiveness from an example state's analyses |
-  + Empirical distributions of SGPs |
-  + Correlation of SGP estimates with prior student achievement |
+  + Distributions of SGPs |
+  + Correlation of SGPs with prior achievement |
 
 ---
 ### Presentation Roadmap
@@ -28,6 +28,7 @@ NOT covered here (but available in the report):
 ---
 
 ###  Additional Resources
+- *Presentation* - https://gitpitch.com/adamvi/NCME_Ranked_SIMEX_SGP
 - *Full SIMEX Report*
   + [Online](https://adamvi.github.io/NCME_Ranked_SIMEX_SGP/)
   + [PDF Download](https://github.com/adamvi/NCME_Ranked_SIMEX_SGP/raw/master/PDF/Ranked_SIMEX_SGP.pdf)
@@ -59,7 +60,7 @@ NOT covered here (but available in the report):
 
 - SIM-ulation & EX-trapolation |
 - Estimate the impact of ME through a series of SIMULATION experiments |
-  + Increasing amounts of simulated ME are added to observed values to create error-prone "pseudo" data sets|
+  + Increasing amounts of simulated ME added to observed values to create even more error-prone "pseudo" data sets|
 - Parameter estimates of interest are calculated using perturbed data|
 - Simulations are repeated a large number of times at each level of increased error. |
 
@@ -111,7 +112,7 @@ NOT covered here (but available in the report):
 Unlike SGP/SIMEX calculation in SGP package Castellano and McCaffrey:
 - Used closed-form equations to estimate "SIMEX SGPs" |
   + No simulation/extrapolation, quantile regression, etc. |
-  + Make assumptions about data distributions and ME structures that don't always hold |
+  + Rely on assumptions about data and ME structures that don't always hold |
 - Produces continuous SIMEX SGP values |
   + Re-ranking integer values from the SGP calculations ... not impressive |
 
@@ -140,8 +141,8 @@ Adaptations to the SGP/SIMEX framework:
 
 Marginal distributions - 8<sup>th</sup> Grade Math SGPs
 
-- SIMEX distribution is U-shaped
-- Ranking produces a more uniform distribution
+- SIMEX distribution is U-shaped |
+- Ranking produces a more uniform distribution |
 
 ![Image-Absolute](./img/Math_G8_Marginal_Distributions-1_Prior.png)
 
@@ -185,7 +186,7 @@ Goodness of Fit Plots - conditional distributions
 
 ####  Ordinary Least Squares SGPs
 
-<img src="./img/Goodness_of_Fit/MATHEMATICS.2017/gofSGP_Grade_8-OLS.png" alt="Uncorrected" width="500" height="500">
+<img src="./img/Goodness_of_Fit/MATHEMATICS.2017/gofSGP_Grade_8_OLS.png" alt="Uncorrected" width="500" height="500">
 
 ---
 ###  Correlation Tables
@@ -229,4 +230,12 @@ Goodness of Fit Plots - conditional distributions
 ---
 ## Questions?
 
-https://gitpitch.com/adamvi/NCME_Ranked_SIMEX_SGP
+- *Presentation* - https://gitpitch.com/adamvi/NCME_Ranked_SIMEX_SGP
+- *Full SIMEX Report*
+  + [Online](https://adamvi.github.io/NCME_Ranked_SIMEX_SGP/)
+  + [PDF Download](https://github.com/adamvi/NCME_Ranked_SIMEX_SGP/raw/master/PDF/Ranked_SIMEX_SGP.pdf)
+- *Code Examples*
+  + [SIMEX with Toy Data Set](https://gist.github.com/adamvi/26b931b26ece4fdd482dba7bde69a945)
+  + [SIMEX with Simulated Data Set](https://gist.github.com/adamvi/0515b1694e7b108139228331a80e7f9e)
+  + [SIMEX Monte Carlo](https://gist.github.com/adamvi/5169922)
+- [*General SGP Resources*](https://github.com/CenterForAssessment/SGP_Resources)

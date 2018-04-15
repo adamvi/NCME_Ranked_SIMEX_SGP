@@ -2,8 +2,8 @@
 ####               &
 ###    Student Growth Percentiles
 ####   ______________________
-####   *Adam R. VanIwaarden*
-####   *Damian W. Betebenner*
+####   *Adam Van Iwaarden*
+####   *Damian Betebenner*
 ####   *Center for Assessment (NCIEA)*
 #####  NCME Annual Meeting -- April 15, 2018
 
@@ -15,8 +15,6 @@ What will be covered:
 - Basics of the SIMEX Method |
 - SIMEX use in Student Growth Percentiles (SGP) |
 - Provide evidence of effectiveness from an example state's analyses |
-  + SGP distributions |
-  + Correlation of SGPs with prior achievement |
 
 ---
 ### Presentation Roadmap
@@ -46,7 +44,7 @@ NOT covered here (but available in the report):
 -  Additional uncertainty in growth estimates (e.g. SGPs) |
 -  Produces biased estimates |
   + disadvantages students with lower prior achievement and vice versa |
-  + transferred to aggregate measures of educator effectiveness with concentrated low/high prior achievement students |
+  + transferred to aggregate measures of growth when concentrated low/high prior achievement students |
 ---
 
 ###  SIMEX Method of ME Correction
@@ -77,7 +75,7 @@ NOT covered here (but available in the report):
 
 - Does not make strong assumptions about variable distributions |
 - Easier to implement for complicated models (e.g. nonparametric quantile regression) |
-- Assumes the SEM is known or can be reasonably well estimated. |
+- Assumption that the SEM is known or can be reasonably well estimated. |
 
 ---
 ###  SIMEX Method and SGPs
@@ -91,7 +89,7 @@ NOT covered here (but available in the report):
 ---
 ###  SIMEX Method and SGPs
 
-Unfortunately ... |
+Unfortunately ...
 - SIMEX corrected SGPs also have technical limitations. |
   - Student level SIMEX SGPs have larger errors than the uncorrected ones |
     + SIMEX SGPs preferred for aggregated results (mean or median SGPs) |
@@ -223,7 +221,7 @@ Goodness of Fit Plots - conditional distributions
 ###  Take away from example state
 
 - SIMEX corrections seem to be working as expected |
-- Ranking the SIMEX SGPs helps in important/visible areas |
+- Ranking the SIMEX SGPs helps re-establish uniformity |
 - Support states using SIMEX SGPs to also adopt SIMEX Ranking |
 
 

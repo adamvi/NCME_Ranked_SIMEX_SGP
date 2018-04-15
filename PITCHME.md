@@ -1,7 +1,7 @@
 ###  Ranked SIMEX Measurement Error Correction
 ####  &
 ###  Student Growth Percentiles
-####   ________________________________________
+####   ______________________
 ####   *Adam R. VanIwaarden*
 ####   *Damian W. Betebenner*
 ####   *Center for Assessment (NCIEA)*
@@ -50,14 +50,14 @@ What will NOT be covered (but available in the report):
 
 ###  SIMEX Method of ME Correction
 
--  Simulation/Extrapolation (SIMEX) techniques eliminate bias in SGPs (Shang, VanIwaarden and Betebenner, 2015) |
--  This method is available in the SGP package for R |
--  Several states use the SIMEX measures in accountability and evaluation policies. |
+- Simulation/Extrapolation (SIMEX) techniques reduces bias in SGPs (Shang, VanIwaarden and Betebenner, 2015) |
+- This method is available in the SGP package for R |
+- Several states use the SIMEX measures in accountability and evaluation policies. |
 ---
 
 ###  SIMEX - the name says it all...
 
-- SIMulation/EXtrapolation |
+- SIM ulation / EX trapolation |
 - Estimate the impact of ME through a series of SIMULATION experiments |
   + Increasing amounts of simulated ME are added to observed values to create error-prone "pseudo" data sets
 - Parameter estimates of interest are calculated using perturbed data|
@@ -81,7 +81,7 @@ What will NOT be covered (but available in the report):
 ---
 ###  SIMEX Method and SGPs
 
-- Straightforward when interested in a simple model parameter (e.g. regression model coefficient) |
+- Straightforward when interested in a simple parameter (e.g. regression model coefficient) |
 - Not what we want to correct for in the SGP model |
 - SGPs are derived from the fitted values of the model |
   + predicted test scores at 100 percentiles |
@@ -93,7 +93,7 @@ What will NOT be covered (but available in the report):
 - Unfortunately ... |
   - SIMEX corrected SGPs also have technical limitations. |
 - Student level SIMEX SGPs have larger errors than the uncorrected ones |
-  + SIMEX preferred for aggregated SGP results (mean or median SGPs) |
+  + SIMEX SGPs preferred for aggregated results (mean or median SGPs) |
   + Uncorrected preferred for student level reporting |
 
 ---
@@ -111,31 +111,49 @@ What will NOT be covered (but available in the report):
 Unlike SGP/SIMEX calculation in SGP package Castellano and McCaffrey:
 - Used closed-form equations to estimate SIMEX SGPs |
   + No simulation/extrapolation, quantile regression, etc. |
-  + Make assumptions about data and ME structures that we don't |
+  + Make assumptions about data distributions and ME structures that don't always hold |
 - Produces continuous SIMEX SGP values |
   + Re-ranking integer values from the SGP calculations ... not impressive |
 
 ---
 ###  Ranked SIMEX SGPs
 
-*Adaptations to the SGP/SIMEX framework:*          
+Adaptations to the SGP/SIMEX framework:
 - Need continuous values of SIMEX SGPs |
-  - Add 10X more percentile values |
+  - Add 10X more percentile value calculations |
     + *At least* 10X longer - not tenable |
-  - Calculate arithmetic midpoints (8) between the SIMEX estimates of the predicted scores |
+  - Calculate midpoints (8) between the SIMEX estimates of the predicted scores |
     + Much faster and similar results
 
 ---
-###  Ranked SIMEX SGPs - Results
+###  Ranked SIMEX SGPs - Real World Results
+
+- Don't know if excess variance from SIMEX process is reduced. |
+  + Rely on evidence from simulation studies |
+- Focus on the distribution of SGPs. |
+  + Looking for a uniform distribution - marginal and conditional |
+  + Uniformity suggests that all levels of growth are observed/possible |
+  + Conditional uniformity means this is true REGARDLESS of prior achievement |
+
+---
+###  Ranked SIMEX SGPs - Real World Results
 
 Marginal distributions - 8<sup>th</sup> Grade Math SGPs (single prior score)
+
+- SIMEX distribution is U-shaped
+- Ranking produces a more uniform distribution
 
 ![Image-Absolute](./img/Math_G8_Marginal_Distributions-1_Prior.png)
 
 ---
-###  Ranked SIMEX SGPs - Results
+###  Ranked SIMEX SGPs - Real World Results
 
 Goodness of Fit Plots - conditional distributions
+- Focus on bottom two panels |
+  + Left panel is a 10 x 10 grid |
+    + SGP deciles x Prior Score deciles |
+  + Right panel is a QQ Plot |
+    + Theoretical vs empirical uniform distribution |
 
 (Scroll Down)
 

@@ -6,6 +6,7 @@ author:
   - name: Damian W. Betebenner
   - name: <em>National Council on Measurement in Education (NCME) Annual Meeting</em>
 date: April 15, 2018
+abstract: "DRAFT REPORT - DO NOT CITE! <br></br> This report provides details about the implementation of SIMEX measurement error correction and SIMEX SGP ranking that has been suggested an additional step that produces even more favorable results."
 ---
 
 <!--SGPreport-->
@@ -14,7 +15,7 @@ date: April 15, 2018
 This document was written by Adam VanIwaarden for the NCME 2018 Annual Meeting.
 
 	Original Draft:  April 01, 2018
-	Final Draft:     April 1X, 2018
+	Second Draft:    April 15, 2018
 
   # require(data.table)
   # require(Literasee)
@@ -127,7 +128,7 @@ Without a continuous value, the percentile ranking^[Calculated as (rank(SIMEX SG
 
 A simpler solution was used that allows the estimated SIMEX values to be placed on a 1/8<sup>th</sup> interval by calculating arithmetic midpoints between each percentile's predicted score values^[SGP estimates are found by predicting 100 scores for each student - one for each percentile.  The position (1-99) of the predicted score that is closest to a student's observed score is their estimated SGP.].  This resulted in RS-SGP values that were more uniformly distributed in initial tests with real and simulated data.
 
-Figure `r getOption("fig_caption_no")+1` shows the distribution of the three types of SGP estimates for 2017 8<sup>th</sup> Grade Mathematics SGP analyses for an example state: uncorrected ("standard"), SIMEX corrected and Ranked SIMEX.  Note that these results are from analyses that use two years of data (a single prior and the current year).  Adding additional prior years data will also greatly reduce ME bias.
+Figure `r getOption("fig_caption_no")+1` shows the distribution of the three types of SGP estimates for 2017 8<sup>th</sup> Grade Mathematics SGP analyses for an example state: uncorrected ("standard"), SIMEX corrected and Ranked SIMEX. These results are from analyses that use two years of data (a single prior and the current year). Adding additional prior years data will also greatly reduce ME bias.
 
 ```{r, cache=TRUE, echo=FALSE, include=FALSE, MarginalDists}
 	dir.create("./img", recursive=TRUE, showWarnings=FALSE)
@@ -182,6 +183,14 @@ These plots display typical distributions of each SGP variant from the same 2017
 
   dat <- Agg_Data_Long[SGP_NORM_GROUP %in% c("2015/MATHEMATICS_6; 2016/MATHEMATICS_7; 2017/MATHEMATICS_8", "2016/MATHEMATICS_7; 2017/MATHEMATICS_8"),
   				 c("VALID_CASE", "CONTENT_AREA", "GRADE", "YEAR", "ID", "SGP_ORDER_1", "SGP_SIMEX_ORDER_1", "SGP_SIMEX_RANKED_ORDER_1", "SCALE_SCORE", "SCALE_SCORE_PRIOR", "SGP_NORM_GROUP"), with=FALSE]
+
+  tmp.lm <- lm(SCALE_SCORE ~ SCALE_SCORE_PRIOR, data=dat)
+  tmp.sgp <- round(100*pnorm(rstandard(tmp.lm)), digits=0)
+  tmp.sgp[tmp.sgp==0] <- 1
+  tmp.sgp[tmp.sgp==100] <- 99
+  dat[, `SGP_(LEAST_SQUARES)` := tmp.sgp]
+  gofSGP(dat, years='2017', content_areas="MATHEMATICS", use.sgp="SGP_(LEAST_SQUARES)", output.format="PNG")
+  file.rename("Goodness_of_Fit/MATHEMATICS.2017/gofSGP_Grade_8.png", "Goodness_of_Fit/MATHEMATICS.2017/gofSGP_Grade_8-OLS.png")
 
   gofSGP(dat, years='2017', content_areas="MATHEMATICS", use.sgp="SGP_ORDER_1", output.format="PNG")
 	gofSGP(dat, years='2017', content_areas="MATHEMATICS", use.sgp="SGP_SIMEX_ORDER_1", output.format="PNG")

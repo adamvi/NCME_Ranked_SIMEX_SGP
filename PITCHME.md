@@ -8,7 +8,6 @@
 #####  NCME Annual Meeting -- April 15, 2018
 
 ---
-
 ### Presentation Roadmap
 
 What will be covered:
@@ -19,6 +18,7 @@ What will be covered:
   + Empirical distributions of SGPs |
   + Correlation of SGP estimates with prior student achievement |
 
+---
 ### Presentation Roadmap
 
 What will NOT be covered (but available in the report):

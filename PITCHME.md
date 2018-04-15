@@ -158,7 +158,6 @@ Goodness of Fit Plots - conditional distributions
 (Scroll Down)
 
 +++
-
 @title[Uncorrected]
 
 ####  Uncorrected
@@ -186,6 +185,14 @@ Goodness of Fit Plots - conditional distributions
 ####  Ordinary Least Squares SGPs
 
 <img src="./img/Goodness_of_Fit/MATHEMATICS.2017/gofSGP_Grade_8_OLS.png" alt="Uncorrected" width="500" height="500">
+
++++
+@title[Uncorrected]
+
+####  Uncorrected
+
+<img src="./img/Goodness_of_Fit/MATHEMATICS.2017/gofSGP_Grade_8.png" alt="Uncorrected" width="500" height="500">
+
 
 ---
 ###  Correlation Tables

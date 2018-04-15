@@ -92,7 +92,7 @@ NOT covered here (but available in the report):
 
 Unfortunately ...
 - SIMEX corrected SGPs also have technical limitations. |
-  - Student level SIMEX SGPs have larger errors than the uncorrected ones |
+  - Student level SIMEX SGPs have larger errors than uncorrected (bias-variance trade-off) |
     + SIMEX SGPs preferred for aggregated results (mean or median SGPs) |
     + Uncorrected preferred for student level reporting |
 
@@ -222,7 +222,7 @@ Goodness of Fit Plots - conditional distributions
 ###  Take away from example state
 
 - SIMEX corrections seem to be working as expected |
-- Ranking the SIMEX SGPs helps re-establish uniformity |
+- Ranking the SIMEX SGPs helps re-establish uniformity of key distributions |
 - Support states using SIMEX SGPs to also adopt SIMEX Ranking |
 
 

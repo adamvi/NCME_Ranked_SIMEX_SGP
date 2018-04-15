@@ -5,7 +5,7 @@
 ####   *Adam Van Iwaarden*
 ####   *Damian Betebenner*
 ####   *Center for Assessment (NCIEA)*
-#####  https://gitpitch.com/adamvi/NCME_Ranked_SIMEX_SGP
+####   gitpitch.com/adamvi/NCME_Ranked_SIMEX_SGP
 
 ---
 ### Presentation Roadmap

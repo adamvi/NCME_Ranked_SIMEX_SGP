@@ -1,6 +1,11 @@
-###  SIMEX Measurement Error Correction
-###  &
+###  Ranked SIMEX Measurement Error Correction
+####  &
 ###  Student Growth Percentiles
+
+####   Adam R. VanIwaarden
+####   Damian W. Betebenner
+####   Center for Assessment (NCIEA)
+#####  NCME Annual Meeting -- April 15, 2018
 
 ---
 
@@ -8,8 +13,8 @@
 
 What will be covered:
 - Review the measurement error problem |
-- Basic description of the SIMEX Method |
-- Basic description of SIMEX implementation in Student Growth Percentiles (SGP) |
+- Basics of the SIMEX Method |
+- Basics of SIMEX in Student Growth Percentiles (SGP) |
 - Provide evidence of effectiveness from an example state's analyses |
   + Empirical distributions of SGPs |
   + Correlation of SGP estimates with prior student achievement |
@@ -18,6 +23,7 @@ What will be covered:
 
 What will NOT be covered (but available in the report):
 - Details on SIMEX and Ranked SIMEX implementation SGP calculation |
+  + Found in the full report (available online) |
 
 ---
 
